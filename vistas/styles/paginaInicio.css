@@ -38,7 +38,7 @@ nav{
     align-items: center;
     justify-content:space-between;
   padding: 20px 50px;
-
+  
 }
 ul li{
     display: inline-block;
@@ -48,9 +48,14 @@ ul li{
     font-size: 1.5rem;
     transition: all 0.3s ease 0s;
 }
+.sesion{
+    text-decoration: none;
+    color: aliceblue;
+
+}
 ul li:hover{
 border-radius: 30px;
-background-color: antiquewhite;
+background-color: rgb(101, 146, 175);
 color: #0c1b32;
 cursor: pointer;
 }
@@ -66,6 +71,7 @@ header h1{
 }
 
 header h2{
+    
     font-size: 4rem;
     color: aliceblue;
     margin-top: 10px;
@@ -104,3 +110,4 @@ align-items: center;
 white-space: nowrap;
   overflow: hidden;
 
+}
