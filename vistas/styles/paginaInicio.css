@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 html{
    font-size: 62.5%;
-    background-image: linear-gradient(305deg, #a7f2ff 0, #507ecc 50%, #0c1b32 100%);
+   background-image: linear-gradient(305deg, #a7f2ff 0, #507ecc 50%, #0c1b32 100%);
 
 }
 .conteinerBarra{
@@ -19,7 +19,7 @@ html{
 
 }
 .logo{
-    font-weight: 600;
+    font-weight: 300;
     font-size: 3.8rem;
 }
 .Titulo{
@@ -80,6 +80,10 @@ header h2{
 header button{
 
     padding: 0 5px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     width: 140px;
     border-color: aliceblue;
     height: 40px;
