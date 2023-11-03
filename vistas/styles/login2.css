@@ -11,18 +11,27 @@ body{
     width: 100%;
     height: 100vh;
 }
-h1 {
+.container h1 {
     font-family: 'Fira Sans Condensed';
     color: #ffffff;
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
   }
-  
+  .container h1:hover {
+    transition: 20ms;
+    cursor: pointer;
+    color: #f77f00;
+  }
   h2 {
     color: #f77f00;
     font-size: 25px;
     text-align: center;
+  }
+  .container h2:hover {
+    transition: 20ms;
+    cursor: pointer;
+    color: #1280ff;
   }
 
 .background .shape{
@@ -33,12 +42,69 @@ h1 {
 .shape:first-child{
     height: 200px;
     width: 200px;
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
+   
     right: 50px;
     top: 180px;
+    animation-name:circuloanimacion ;
+    animation-duration: 8s;
+    animation: circuloanimacion 8s linear infinite;
+    transition: background-color 6s;
+    
+
+}
+
+@keyframes circuloanimacion {
+    
+    0% {
+       background-color: #126aef;
+        transform: translateX(0px) translateY(0px);
+      }
+      10% {
+        background-color: #1363ea;
+
+        transform: translateX(10px) translateY(-10px);
+      }
+      20% {
+        background-color: #1363ea;
+
+        transform: translateX(20px) translateY(-20px);
+      }
+      30% {
+        background-color: #2848c2;
+
+
+        transform: translateX(30px) translateY(-30px);
+      }
+      40% {
+        background-color: #21046b;
+
+        transform: translateX(35px) translateY(-35px);
+      }
+      50% {
+        background-color: #262588;
+
+        transform: translateX(30px) translateY(-30px);
+      }
+      60% {
+        background-color: #2641ae;
+        transform: translateX(25px) translateY(-25px);
+      }
+      70% {
+        background-color: #1363ea;
+        transform: translateX(20px) translateY(-20px);
+      }
+      80% {
+        background-color: #1a63e1;
+        transform: translateX(15px) translateY(-15px);
+      }
+      90% {
+        background-color: #1261d8;
+        transform: translateX(10px) translateY(-10px);
+      }
+      100% {
+        background-color: #126aef;
+        transform: translateX(0px) translateY(0px);
+      }
 }
 .shape:last-child{
     height: 150px;
@@ -50,6 +116,63 @@ h1 {
     );
     left:700px;
     bottom: 80px;
+    animation-name:ciculo2 ;
+    animation-duration: 8s;
+    animation: ciculo2 8s linear infinite;
+    transition: background-color 6s;
+}
+@keyframes ciculo2 {
+    
+    0% {
+       background-color: #ff512f;
+        transform: translateX(0px) translateY(0px);
+      }
+      10% {
+        background-color: #fe5b2b;
+
+        transform: translateX(10px) translateY(10px);
+      }
+      20% {
+        background-color: #fd6427;
+
+        transform: translateX(20px) translateY(20px);
+      }
+      30% {
+        background-color: #fc6924;
+
+
+        transform: translateX(30px) translateY(30px);
+      }
+      40% {
+        background-color: #fb7121;
+
+        transform: translateX(35px) translateY(35px);
+      }
+      50% {
+        background-color: #f9781e;
+
+        transform: translateX(30px) translateY(30px);
+      }
+      60% {
+        background-color: #f87f1b;
+        transform: translateX(25px) translateY(25px);
+      }
+      70% {
+        background-color: #fb7121;
+        transform: translateX(20px) translateY(20px);
+      }
+      80% {
+        background-color: #fc6924;
+        transform: translateX(15px) translateY(15px);
+      }
+      90% {
+        background-color: #fd6228;
+        transform: translateX(10px) translateY(10px);
+      }
+      100% {
+        background-color: #fe5a2b;
+        transform: translateX(0px) translateY(0px);
+      }
 }
 form{
     height: 300px;
@@ -65,6 +188,11 @@ form{
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 
+}
+form:hover{
+    transition: 20ms;
+    cursor: pointer;
+    backdrop-filter: blur(20px);
 }
 .login-right img{
     display: flex;
@@ -112,6 +240,12 @@ color: #eaf0fb;
     margin-bottom: 50px;
     font-size: 30px;
     font-family: 'Amiko';
+  }
+  .formleft h2:hover{
+    transition: 20ms;
+    cursor: pointer;
+    color: #f77f00;
+
   }
   .login-left input {
     font-family: 'Be Vietnam Pro';
@@ -221,3 +355,57 @@ color: #eaf0fb;
     font-size: 15px;
     cursor: pointer;
     }
+
+
+    /*Media quyerys*/
+    @media (min-width: 768px) {
+        .login-left {
+            width: 50%;
+        }
+        .login-right {
+            width: 50%;
+        }
+    }
+    /* Estilos para tablets en orientación horizontal (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .login-container {
+        flex-direction: row;
+    }
+    .login-left, .login-right {
+        width: 50%;
+    }
+}
+
+/* Estilos para tablets en orientación vertical (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .login-container {
+        flex-direction: column;
+    }
+    .login-left, .login-right {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos más pequeños como teléfonos */
+@media (max-width: 767px) {
+    .login-container {
+        flex-direction: column;
+    }
+    .login-left, .login-right {
+        width: 100%;
+    }
+    .login-right {
+        order: -1; /* Reordena el lado derecho arriba */
+    }
+    .inputgruop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inputform {
+        width: 100%;
+    }
+    
+}
+
+/*circulos*/
+
