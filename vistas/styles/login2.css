@@ -109,11 +109,11 @@ body{
 .shape:last-child{
     height: 150px;
     width: 150px;
-    background: linear-gradient(
+    /*background: linear-gradient(
         to right,
         #ff512f,
         #f09819
-    );
+    );*/
     left:700px;
     bottom: 80px;
     animation-name:ciculo2 ;
