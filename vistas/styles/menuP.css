@@ -8,7 +8,8 @@
 .hedear{
     width: 100%;
     height: 100vh;
-  background-image: url("../Imagenes/dondoblamcp.jpg");
+ /* background-image: url("../Imagenes/dondoblamcp.jpg");*/
+ background-color: EDEDE9;
   background-position: center;
     background-size: cover;
 
