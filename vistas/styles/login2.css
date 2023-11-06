@@ -207,7 +207,7 @@ form:hover{
 
 .login-right{
     background-color: #1c1c1c;
-    width: 50%;
+    width: 40%;
     height: 100dvh;
 
     overflow: hidden;
@@ -301,7 +301,7 @@ color: #eaf0fb;
   .formleft {
     background-color: #232323;
   
-    height:450px;
+    height:480px;
     width:350px; 
     flex-direction: column;
     justify-content: center;
@@ -318,8 +318,21 @@ color: #eaf0fb;
     box-shadow: 0 0 20px #f77f00;
 
   }
+ 
+  .login-left a {
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+   
+    color: white;
+    text-align: center;
+    margin:22%;
 
-
+  }
+  .login-left a:hover {
+    color:#126aef;
+    font-size: 15.2px;
+  }
 
 .formleft button {
     border-radius: 15px;
@@ -330,7 +343,7 @@ color: #eaf0fb;
     background-color:  rgba(255, 255, 255, 0.07);
    
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
  
     color: #ffffff;
   
@@ -344,7 +357,7 @@ color: #eaf0fb;
 
    
 }
-
+ 
 .formleft button:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 9ms;

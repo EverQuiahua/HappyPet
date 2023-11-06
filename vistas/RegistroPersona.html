@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="styles/RegistroPersona.css">
+</head>
+
+<body>
+
+      
+
+
+
+
+    <form method="POST">
+        <h1>Formulario de registro</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Nombre</p>
+                <input type="text" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="col-sm-6">
+                <p>Apellido paterno</p>
+                <input type="text" name="apellidoPaterno" placeholder="Apellido paterno">
+
+            </div>
+            <div class="col-sm-6">
+                <p>Apellido materno</p>
+                <input type="text" name="apellidoMaterno" placeholder="Apellido materno">
+            </div>
+        </div>
+        <p>Correo</p>
+        <input class="inputcorrero" type="email" name="correo" placeholder="persona@correo.com">
+        <div class="row">
+            
+            <div class="FecTel">
+               
+                <p>Fecha Nacimiento</p>
+                <input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento" data-format="yyyy/mm/dd">
+            </div>
+            <div class="FecTel">
+                <p>Teléfono</p>
+                <input type="tel" name="telefono" placeholder="Teléfono">
+            </div>
+        </div>
+        <div class="inputgruop">
+            <p> Nombre de cuenta </p>
+            <img class="icono2" src="iconos/interrogacion.svg" alt="">
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="inputgruop">
+                    <img class="icono" src="iconos/person.svg" alt="">
+                    <input type="text" name="cuenta" placeholder="Usuario">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="inputgruop">
+                    <img class="icono" src="iconos/candado.svg" alt="">
+                    <input type="password" name="contraseña" placeholder="Contraseña">
+                </div>
+            </div>
+        </div>
+        <div class="butun">
+        <button type="submit" name="aceptar">Aceptar</button>
+        <button type="reset" name="cancelar">Cancelar</button>
+    </div>
+    <p><a href="login2.html">Ya Tengo cuenta</a></p>
+    </form>
+
+</body>
+
+</html>

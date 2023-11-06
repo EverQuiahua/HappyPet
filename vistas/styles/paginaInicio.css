@@ -90,7 +90,7 @@ header button{
     color: aliceblue;
     background-color: transparent;
     backdrop-filter: blur(5px);
-   
+    list-style: none;
     justify-content: center;
     border-radius: 30px;
     transition: width 0.5s;
