@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF dispensador</title>
+    <link rel="stylesheet" type="text/css" href="styles/infDis.css">
+</head>
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="cloud" name="reorder-four-outline"></ion-icon>
+                <span>HappyPet</span>
+            </div>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="inbox" href="#">
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                        <span>Agregar mascota</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="trash-outline"></ion-icon>
+                        <span>Eliminar mascota</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <span>Dispensador</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                        <span>Inf. Alimentación</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <span>Usuario</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Modo oscuro</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <main>
+    
+        <h1>Información del dispensador</h1>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/infDis.js"></script>
+
+    <div id="dispensador-info"></div>
+</body>
+</html>
