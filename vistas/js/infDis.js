@@ -61,3 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 });
+
+function cambiarVista() {
+    window.location.href = "infDis.html";
+}
+
+function cambiarVistaAgregarM() {
+    window.location.href = "AgregarMas.html";
+}
