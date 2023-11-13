@@ -1,4 +1,5 @@
 const cloud = document.getElementById("cloud");
+const Dispensador = document.getElementById("Dispensador")
 const barraLateral = document.querySelector(".barra-lateral");
 const spans = document.querySelectorAll("span");
 const palanca = document.querySelector(".switch");
@@ -39,3 +40,7 @@ cloud.addEventListener("click",()=>{
         span.classList.toggle("oculto");
     });
 });
+
+function cambiarVista() {
+    window.location.href = "infDis.html";
+}
