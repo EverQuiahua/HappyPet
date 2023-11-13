@@ -76,14 +76,31 @@
 
     </div>
 
-
     <main>
-    
-        <h1>Información del dispensador</h1>
+        <h1>Información del dispensador aaa</h1>
+        <div id="dispensador-info"></div>
+    </main>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/infDis.js"></script>
+    <script>
+        async function getPercentage() {
+            const response = await fetch('http://192.168.1.103/');
+            const data = await response.text();
+            const percentage = Number(data);
+            return percentage;
+        }
+                // Función para actualizar el porcentaje en el elemento "dispensador-info"
+                async function actualizarPorcentaje() {
+            const porcentaje = await getPercentage();
+            document.getElementById('dispensador-info').innerText = porcentaje + '%';
+        }
 
-    <div id="dispensador-info"></div>
+        // Ejemplo de cómo actualizar el porcentaje cada segundo
+        setInterval(actualizarPorcentaje, 1000);
+    </script>
+
 </body>
+
 </html>
