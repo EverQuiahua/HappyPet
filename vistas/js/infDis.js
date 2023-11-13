@@ -44,23 +44,6 @@ cloud.addEventListener("click",()=>{
 function cambiarVista() {
     window.location.href = "infDis.html";
 }
-document.addEventListener("DOMContentLoaded", function () {
-    // Llama a la función para obtener la información del dispensador cuando se carga la página
-    obtenerInformacionDispensador();
-
-    // Función para obtener la información del dispensador mediante una solicitud Fetch
-    function obtenerInformacionDispensador() {
-        fetch("liecbddmkiiihnedobmlmillhodjkdmb") // Reemplaza "/distance" con la ruta correcta de tu servidor ESP32
-            .then(response => response.text())
-            .then(data => {
-                // Muestra la información en el contenedor
-                document.getElementById("dispensador-info").innerText = "Nivel de dispensador: " + data;
-            })
-            .catch(error => {
-                console.error("Error al obtener información del dispensador:", error);
-            });
-    }
-});
 
 function cambiarVista() {
     window.location.href = "infDis.html";
@@ -69,3 +52,17 @@ function cambiarVista() {
 function cambiarVistaAgregarM() {
     window.location.href = "AgregarMas.html";
 }
+
+async function getPercentage() {
+    // Realizamos una solicitud HTTP a la ruta `/my-custom-route`
+    const response = await fetch('http://192.168.1.103/');
+  
+    // Obtenemos el cuerpo de la respuesta
+    const data = await response.text();
+  
+    // Convertimos el texto a un número
+    const percentage = Number(data);
+  
+    // Devolvemos el porcentaje
+    return percentage;
+  }
