@@ -293,16 +293,36 @@ main h1 {
 main {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80px; /* Ajusta el valor según sea necesario */
+    max-width: 80px;
     padding: 20px;
     transition: margin-left 0.5s ease;
+    white-space: nowrap;
+    text-align: center;
+    text-indent: -250px; /* Ajusta el valor según desees */
 }
 
+/* Estilo adicional para la clase min-main */
 main.min-main {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 222px; /* Ajusta el valor según sea necesario */
+    max-width: 222px;
+    text-indent: -10px; /* Ajusta el valor según desees */
 }
+.progress-container {
+    height: 300px;
+    width: 60px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end; /* Alinea el contenido al final */
+}
+
+.progress {
+    width: 60%;
+    background-color: #19c91f;
+    transition: height 0.5s ease-in-out;
+}
+
 
 
 /*------------------> Responsive*/
