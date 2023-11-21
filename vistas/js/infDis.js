@@ -66,3 +66,38 @@ async function getPercentage() {
     // Devolvemos el porcentaje
     return percentage;
   }
+  // Obtener el contexto del canvas
+const ctx = document.getElementById('porcentaje-chart').getContext('2d');
+
+// Función para inicializar el gráfico
+function initChart(porcentaje) {
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Utilizado', 'Disponible'],
+            datasets: [{
+                data: [porcentaje, 100 - porcentaje], // Datos del porcentaje y el complemento
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)', // Color para la parte usada
+                    'rgba(54, 162, 235, 0.8)' // Color para la parte disponible
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
+            // Otras opciones de configuración del gráfico
+        }
+    });
+}
+
+// Llamada a la función de obtener el porcentaje y actualizar el gráfico
+async function actualizarPorcentaje() {
+    const porcentaje = await getPercentage();
+    document.getElementById('dispensador-info').innerText = porcentaje + '%';
+    initChart(porcentaje);
+}
+
+// Ejemplo de cómo actualizar el porcentaje cada segundo
+setInterval(actualizarPorcentaje, 1000);
