@@ -319,9 +319,34 @@ main.min-main {
 
 .progress {
     width: 60%;
-    background-color: #19c91f;
+    background-color: #2aac2f;
     transition: height 0.5s ease-in-out;
-}
+    border: 2px solid #38c0e2; /* Añadir un borde negro de 2px */
+  }
+  
+  .container {
+    width: 200px;
+    position: relative;
+  }
+  
+  label {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  progress {
+    width: 20px;
+    height: 150px;
+    transform-origin: bottom;
+    transform: rotate(-90deg) translateY(100%);
+    appearance: none;
+    border: 2px solid #c51a1a; /* Añadir un borde negro de 2px */
+    border-radius: 0px; /* También puedes definir un radio de borde para darle esquinas redondeadas */
+  }
+  
+  /* Los estilos específicos de navegador no serán necesarios si se agregan bordes directamente en el selector progress */
+  
 
 
 
